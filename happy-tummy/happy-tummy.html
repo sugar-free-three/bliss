@@ -8,12 +8,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Load JQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./happy-tummy.js"></script>
     <title>Happy Tummy</title>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="loadRecipes()">
     <nav class="navbar navbar-expand-lg navbar-light">
         <img src="https://www.flaticon.com/svg/static/icons/svg/3158/3158969.svg" height="50" width="50">
         <a class="navbar-brand" href="../" style="margin-left:15px;">Bliss</a>
@@ -40,7 +43,78 @@
     
     
     <h1>Happy Tummy</h1>
-    <p>Welcome to Happy Tummy, where ...</p>
-    </div> 
+    <p>Welcome to Happy Tummy, where you can find and share recipes that bring you nothing but happiness!</p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h2>Recipes from the Bliss Community</h2>
+          <p id="recipes">Yayyy! Yummy recipes!! :)</p>
+        </div>
+
+        <div class="col-4">
+          <h2>Share a Recipe</h2>
+          <form onsubmit=" return (submitForm())" id="recipe_form">
+            <h3><small class="muted">General Recipe Information</small></h3>
+            <div class="form-group">
+              <label for="recipe_name">Recipe name</label>
+              <input type="text" class="form-control" id="recipe_name" name="recipe_name" placeholder="Grandma's Peach Cobbler" required>
+              <div class="invalid-tooltip">Please provide a recipe name.</div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="prep_time">Prep Time (Minutes)</label>
+                <input type="number" class="form-control" id="prep_time" name="prep_time" placeholder="10" required="true">
+              </div>
+
+              <div class="form-group col">
+                <label for="cook_time">Cook Time (Minutes)</label>
+                <input type="number" class="form-control" id="cook_time" name="cook_time" placeholder="25" required="true">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="servings">Servings</label>
+                <input type="number" class="form-control" id="servings" name="servings" placeholder="4" required="true">
+              </div>
+
+              <div class="form-group col">
+                <label for="calories">Calories (per serving)</label>
+                <input type="number" class="form-control" id="caloires" name="calories" placeholder="350" required="true">
+              </div>
+            </div>
+
+            <h3><small class="muted">Ingredients</small></h3>
+            <div class="form-group">
+              <label for="ingredient1">Ingredient 1</label>
+              <input type="text" class="form-control" id="ingredient1" name="ingredient1" placeholder="2 cups sugar" required="true">
+            </div>
+
+            <div class="form-group">
+              <label for="ingredient2">Ingredient 2</label>
+              <input type="text" class="form-control" id="ingredient2" name="ingredient2" placeholder="1 tsp vanilla extract">
+            </div>
+
+            <div class="form-group">
+              <label for="ingredient3">Ingredient 3</label>
+              <input type="text" class="form-control" id="ingredient3" name="ingredient3" placeholder="1/4 cup of grandma's love <3">
+            </div>
+            <button class="btn btn-secondary btn-sm" onclick="addIngredientField()">Add Ingredient</button>
+
+            <div class="form-group">
+              <label for="instructions">Instructions</label>
+              <textarea required="true" class="form-control" id="instructions" name="instructions" rows="10" placeholder="1. Preheat your oven to 350&#10;2. Combine eggs, vanilla, and sugar in a mixing bowl.&#10; ..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Share Recipe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <div>Icons made by <a class="pretty-links" href="https://www.flaticon.com/authors/kawaii/lineal" title="FreePik">FreePik</a> from <a class="pretty-links" href="https://www.flaticon.com/free-icon/heart_3158969" title="Flat Icon">Flat Icon</a></div>
+  </footer> 
 </body>
 </html>
