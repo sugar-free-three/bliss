@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Zilla+Slab+Highlight&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
+
+
+.title {
+  text-align: center;
+  width: auto;
+  height: 60px;
+}
+
+textarea {
+  background-color: transparent;
+  border: none;
+  color: #5c3305;
+  font-family: 'Homemade Apple', cursive;
+}
+
+.board {
+  display: flex;
+  flex-flow: row-wrap;
+  flex-wrap: wrap;
+  height: auto;
+  width: 70%;
+  position: relative;
+  margin: auto;
+  background-color: #e9d6b9;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 0px #e8e0d3;
+  padding: 25px;
+  color: #785737;
+}
+
+.timeline {
+  height: 8px;
+  width: auto;
+  position: absolute;
+  margin-top: 23%;
+  background-color: #695f4d;
+  border-radius:20px;
+}
+
+.stickynote {
+  height: 200px;
+  width: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  word-break: normal;
+  background-color: #f0cdcd;
+  padding: 0px;
+  margin: 20px;
+  border-top: 25px solid #e2b0ac;
+  padding: 20px;
+  box-shadow: 0px 5px 5px 0px #82602f;
+}
+
+.add {
+  background-color: #e6c9c9;
+  font-size: 32px;
+  bottom: 47%;
+  left: 25%;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  border: none;
+  position: absolute;
+}
+
+.add:hover {
+  animation: 1s emphasize infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes emphasize {
+    0% {
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  } 
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+ 
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: rgba(25,147,147,0.1);
+}
+ 
+::-webkit-scrollbar-thumb {
+     border-radius: 5px;
+     background-color: rgb(228, 192, 126);
+}
