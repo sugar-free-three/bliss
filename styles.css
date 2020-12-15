@@ -71,3 +71,8 @@ footer {
     height: auto;
     float: right;
   }
+
+  .pretty-reply{
+      margin-top: 0.6em;
+      margin-right: 1em;
+  }

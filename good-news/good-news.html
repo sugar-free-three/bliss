@@ -48,7 +48,16 @@
           <div class="row">
             <div class="col">
               <h5 class="card-title">News article title</h5>
-              <p class="card-text">Lorem ipsum ...</p>
+              <!-- need to cut this for media query  -->
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.
+              </p>
               <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
             </div>
   
@@ -56,63 +65,75 @@
               <img class="card-img-top pretty-img" src="https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img" >
             </div>
           </div>
-
-          <!-- comments section  -->
-          <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                  <div class="page-header card-text">
-                    <h5>Comments</h5>
-                  </div> 
-
-                  <!-- reader comments  -->
-                   <div class="comments-list card-text">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-
-                        <!-- one comment -->
-                        <div class="media">
-                          <img class="mr-3" src="https://www.flaticon.com/svg/static/icons/svg/763/763721.svg" alt="icon" height="50" width="50">
-                          <div class="media-body col-sm-auto">
-                            <h6 class="mt-0">Joyce</h6>
-                            <p>first</p>
-                          </div>
+  
+        <div class="container">
+          <div class="row">
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h5>Comments</h5>
+                </div> 
+  
+                <!-- reader comments  -->
+                 <div class="comments-list">
+                  <ul class="list-group list-group-flush">
+                    <!-- one comment -->
+                    <li class="list-group-item">
+                      <div class="media">
+                        <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763721.svg" alt="icon" height="50" width="50">
+                        <div class="media-body col-sm-auto">
+                          <h6 class="mt-0">Joyce</h6>
+                          <p>first!!</p>
+                            <!-- replies used to go here, but no more  -->
                         </div>
-                      </li>
-
-                      <li class="list-group-item">
-                        <!-- second comment  -->
-                        <div class="media mt-3">
-                          <div class="pr-3" href="#">
-                            <img src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
-                          </div>
-                          <div class="media-body col-sm-auto">
-                            <h6 class="mt-0">Mohra</h6>
-                            <p>second!</p>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li class="list-group-item">
-                        <!-- third comment  -->
-                        <div class="media mt-3">
-                          <div class="pr-3" href="#">
-                            <img src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
-                          </div>
-                          <div class="media-body col-sm-auto">
-                            <h6 class="mt-0">Shannon</h6>
-                            <p>third ?</p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                      </div>
+                      
+                      
+                      <!-- begin replies section  -->
                   
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
+                      <!-- one reply to comment  -->
+                      <div class="media mt-3 col-sm-auto">
+                        <h5 class="pretty-reply">↳</h5>
+                        <div class="pr-3" href="#">
+                          <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
+                        </div>
+                        <div class="media-body">
+                          <h6 class="mt-0">Shannon</h6>
+                          <p>reply to first comment</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- one comment -->
+                    <li class="list-group-item">
+                      <div class="media">
+                        <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
+                        <div class="media-body col-sm-auto">
+                          <h6 class="mt-0">Mohra</h6>
+                          <p>second :)</p>
+                        </div>
+                      </div>
+
+                      <!-- another reply  -->
+                      <div class="media mt-3 col-sm-auto">
+                        <h5 class="pretty-reply">↳</h5>
+                        <div class="pr-3" href="#">
+                          <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
+                        </div>
+                        <div class="media-body">
+                          <h6 class="mt-0">Shannon</h6>
+                          <p>reply to second comment</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                
+              </div>
+          </div>
+      </div>
+      </div>
+  
+      </div>
+      </div>
 
     <!-- second article  -->
     <div class="card mb-3">
@@ -120,7 +141,15 @@
         <div class="row">
           <div class="col">
             <h5 class="card-title">News article title</h5>
-            <p class="card-text">Lorem ipsum ...</p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.
+            </p>
             <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
           </div>
 
@@ -140,13 +169,13 @@
                 <!-- reader comments  -->
                  <div class="comments-list">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
 
-                      <!-- one comment -->
+                    <!-- one comment -->
+                    <li class="list-group-item">
                       <div class="media">
-                        <img class="mr-3" src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
+                        <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
                         <div class="media-body col-sm-auto">
-                          <h6 class="mt-0">Shannon</h6>
+                          <h6 class="mt-0">Mohra</h6>
                           <p>first !!!</p>
                         </div>
 
@@ -167,7 +196,15 @@
         <div class="row">
           <div class="col">
             <h5 class="card-title">News article title</h5>
-            <p class="card-text">Lorem ipsum ...</p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.
+            </p>
             <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
           </div>
 
@@ -204,38 +241,45 @@
               <!-- reader comments  -->
                <div class="comments-list">
                 <ul class="list-group list-group-flush">
+
+                  <!-- one comment -->
                   <li class="list-group-item">
-
-                    <!-- one comment -->
                     <div class="media">
-                      <img class="mr-3" src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
+                      <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
                       <div class="media-body col-sm-auto">
-                        <h6 class="mt-0">Shannon</h6>
+                        <h6 class="mt-0">Mohra</h6>
                         <p>first!!</p>
-                    
-                        <!-- one reply to comment  -->
-                        <div class="media mt-3 col-sm-auto">
-                          <div class="pr-3" href="#">
-                            <img src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
-                          </div>
-                          <div class="media-body col-sm-auto">
-                            <h6 class="mt-0">Mohra</h6>
-                            <p>first reply to comment</p>
-                          </div>
-                        </div>
-
-                        <!-- another reply to same comment  -->
-                        <div class="media mt-3 col-sm-auto">
-                          <div class="pr-3" href="#">
-                            <img src="https://www.flaticon.com/svg/static/icons/svg/763/763721.svg" alt="icon" height="50" width="50">
-                          </div>
-                          <div class="media-body col-sm-auto">
-                            <h6 class="mt-0">Joyce</h6>
-                            <p>second reply to same comment</p>
-                          </div>
-                        </div>
+                          <!-- replies used to go here  -->
                       </div>
                     </div>
+
+                    <!-- begin replies section  -->
+                
+                    <!-- one reply to comment  -->
+                    <div class="media mt-3 col-sm-auto">
+                      <h5 class="pretty-reply">↳</h5>
+                      <div class="pr-3" href="#">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
+                      </div>
+                      <div class="media-body">
+                        <h6 class="mt-0">Shannon</h6>
+                        <p>first reply to comment</p>
+                      </div>
+                    </div>
+
+                    <!-- another reply to same comment  -->
+                    <div class="media mt-3 col-sm-auto">
+                      <h5 class="pretty-reply">↳</h5>
+                      <div class="pr-3" href="#">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/763/763721.svg" alt="icon" height="50" width="50">
+                      </div>
+                      <div class="media-body">
+                        <h6 class="mt-0">Joyce</h6>
+                        <p>second reply to same comment</p>
+                      </div>
+                    </div>
+
+
                   </li>
                 </ul>
               
@@ -253,7 +297,15 @@
         <div class="row">
           <div class="col">
             <h5 class="card-title">News article title</h5>
-            <p class="card-text">Lorem ipsum ...</p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.
+            </p>
             <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
           </div>
 
@@ -271,7 +323,15 @@
         <div class="row">
           <div class="col">
             <h5 class="card-title">News article title</h5>
-            <p class="card-text">Lorem ipsum ...</p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.
+            </p>
             <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
           </div>
 
@@ -290,11 +350,11 @@
         <!-- reader comments  -->
         <div class="comments-list">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">
 
-              <!-- one comment -->
+            <!-- one comment -->
+            <li class="list-group-item">
               <div class="media">
-                <img class="mr-3" src="https://www.flaticon.com/svg/static/icons/svg/763/763721.svg" alt="icon" height="50" width="50">
+                <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763721.svg" alt="icon" height="50" width="50">
                 <div class="media-body col-sm-auto">
                   <h6 class="mt-0">Joyce</h6>
                   <p>first</p>
@@ -302,18 +362,17 @@
               </div>
             </li>
 
+            <!-- second comment -->
             <li class="list-group-item">
-              <!-- second comment -->
-              <div class="media mt-3">
-                <div class="pr-3" href="#">
-                  <img src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
-                </div>
+              <div class="media">
+                <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
                 <div class="media-body col-sm-auto">
                   <h6 class="mt-0">Shannon</h6>
-                  <p>second</p>
+                  <p>first</p>
                 </div>
               </div>
             </li>
+
           </ul>
       </div>
       </div>
@@ -328,7 +387,15 @@
         <div class="row">
           <div class="col">
             <h5 class="card-title">News article title</h5>
-            <p class="card-text">Lorem ipsum ...</p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.
+            </p>
             <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
           </div>
 
@@ -348,11 +415,11 @@
                 <!-- reader comments  -->
                  <div class="comments-list">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
 
                       <!-- one comment -->
+                      <li class="list-group-item">
                       <div class="media">
-                        <img class="mr-3" src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
+                        <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
                         <div class="media-body col-sm-auto">
                           <h6 class="mt-0">Mohra</h6>
                           <p>first</p>
