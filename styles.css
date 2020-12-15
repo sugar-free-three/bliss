@@ -65,3 +65,9 @@ footer {
     color: #6961ed;
 }
 
+.pretty-img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    float: right;
+  }
