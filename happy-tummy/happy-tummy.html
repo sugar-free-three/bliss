@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-<body onload="loadRecipes()">
+<body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <img src="https://www.flaticon.com/svg/static/icons/svg/3158/3158969.svg" height="50" width="50">
         <a class="navbar-brand" href="../" style="margin-left:15px;">Bliss</a>
@@ -64,7 +64,11 @@
             </ul>
             <div class="card-body">
               <h6 class="card-subtitle">Instructions</h6>
-              <p class="card-text">1. Preheat your oven to 350.</p>
+              <ol>
+                <li>Preheat oven to 350.</li>
+                <li>second thing</li>
+
+              </ol>
             </div>
           </div>
 
@@ -82,9 +86,12 @@
             </ul>
             <div class="card-body">
               <h6 class="card-subtitle">Instructions</h6>
-              <p class="card-text">1. Place a large pot over medium high heat and add oil. Once oil is hot, add garlic, onion, carrots, and celery. Cook for
-                                      a few minutes until onion becomes translucent.
-              </p>
+              <ol>
+                <li>Place a large pot over medium high heat and add oil. Once oil is hot, add garlic, onion, carrots, and celery. Cook for
+                  a few minutes until onion becomes translucent.</li>
+                <li>second thing</li>
+
+              </ol>
             </div>
           </div>
         </div>
@@ -124,7 +131,7 @@
               </div>
             </div>
 
-            <h3><small class="muted">Ingredients</small></h3>
+            <h3><small class="muted">Ingredients</small></h3> <button type="button" class="btn btn-secondary btn-sm" onclick="addIngredientField(); return false;">Add Ingredient</button>
 
             <div id="ingredients">
               <div class="form-group">
@@ -132,22 +139,18 @@
                 <input type="text" class="form-control" id="ingredient1" name="ingredient1" placeholder="2 cups sugar" required="true">
               </div>
 
-              <div class="form-group">
-                <label for="ingredient2">Ingredient 2</label>
-                <input type="text" class="form-control" id="ingredient2" name="ingredient2" placeholder="1 tsp vanilla extract">
-              </div>
+            </div>
+            
 
+            <h3><small class="muted">Steps</small></h3> <button type="button" class="btn btn-secondary btn-sm" onclick="addStepField(); return false;">Add Step</button>
+
+            <div id="steps">
               <div class="form-group">
-                <label for="ingredient3">Ingredient 3</label>
-                <input type="text" class="form-control" id="ingredient3" name="ingredient3" placeholder="1/4 cup of grandma's love <3">
+                <label for="instructions">Step 1</label>
+                <textarea required="true" class="form-control" id="step1" name="step1" rows="4" placeholder="Preheat your oven to 350."></textarea>
               </div>
             </div>
-            <button type="button" class="btn btn-secondary btn-sm" onclick="addIngredientField(); return false;">Add Ingredient</button>
-
-            <div class="form-group">
-              <label for="instructions">Instructions</label>
-              <textarea required="true" class="form-control" id="instructions" name="instructions" rows="10" placeholder="1. Preheat your oven to 350&#10;2. Combine eggs, vanilla, and sugar in a mixing bowl.&#10; ..."></textarea>
-            </div>
+            
             <button type="submit" class="btn btn-primary">Share Recipe</button>
           </form>
         </div>
