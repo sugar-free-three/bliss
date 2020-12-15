@@ -48,7 +48,7 @@
     <div class="container">
       <div class="row">
         <!-- recipes column -->
-        <div class="recipes col-8">
+        <div class="recipes col-lg-8">
           <h2>Recipes from the Bliss Community</h2>
           <div class="card recipe" style="margin-bottom: 1em;">
             <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=2000&h=1047&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2000%2F12%2F02%2F0886_192302_DuPree_MR_13310-2000.jpg" alt="a beautiful slice of peach cobbler" class="card-img-top ">
@@ -90,7 +90,7 @@
         </div>
 
         <!-- recipe form column -->
-        <div class="col-4" style="border-left: 1em;">
+        <div class="col-lg-4" style="border-left: 1em;">
           <h2>Share a Recipe</h2>
           <form onsubmit=" submitForm(); return false;" id="recipe_form" method="POST">
             <h3><small class="muted">General Recipe Information</small></h3>
@@ -101,24 +101,24 @@
             </div>
 
             <div class="form-row">
-              <div class="form-group col">
+              <div class="form-group col-sm">
                 <label for="prep_time">Prep Time (Minutes)</label>
                 <input type="number" class="form-control" id="prep_time" name="prep_time" placeholder="10" required="true">
               </div>
 
-              <div class="form-group col">
+              <div class="form-group col-sm">
                 <label for="cook_time">Cook Time (Minutes)</label>
                 <input type="number" class="form-control" id="cook_time" name="cook_time" placeholder="25" required="true">
               </div>
             </div>
 
             <div class="form-row">
-              <div class="form-group col">
+              <div class="form-group col-sm">
                 <label for="servings">Servings</label>
                 <input type="number" class="form-control" id="servings" name="servings" placeholder="4" required="true">
               </div>
 
-              <div class="form-group col">
+              <div class="form-group col-sm">
                 <label for="calories">Calories (per serving)</label>
                 <input type="number" class="form-control" id="caloires" name="calories" placeholder="350" required="true">
               </div>
