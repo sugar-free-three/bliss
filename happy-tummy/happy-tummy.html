@@ -10,7 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!--Load JQuery-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./happy-tummy.js"></script>
+    <script type="text/javascript" src="./happy-tummy.js"></script>
     <title>Happy Tummy</title>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
@@ -47,14 +47,52 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-8">
+        <!-- recipes column -->
+        <div class="recipes col-8">
           <h2>Recipes from the Bliss Community</h2>
-          <p id="recipes">Yayyy! Yummy recipes!! :)</p>
+          <div class="card recipe" style="margin-bottom: 1em;">
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=2000&h=1047&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2000%2F12%2F02%2F0886_192302_DuPree_MR_13310-2000.jpg" alt="a beautiful slice of peach cobbler" class="card-img-top ">
+            <div class="card-body">
+              <h5 class="card-title">Grandma's Peach Cobbler</h5>
+              <p class="card-text">4 servings/350 calories per serving</p>
+              <p class="card-text">10 min prep time/25 min cook time</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1/4 cup sugar</li>
+              <li class="list-group-item">2 peaches</li>
+              <li class="list-group-item">1 tsp vanilla extract</li>
+            </ul>
+            <div class="card-body">
+              <h6 class="card-subtitle">Instructions</h6>
+              <p class="card-text">1. Preheat your oven to 350.</p>
+            </div>
+          </div>
+
+          <div class="card recipe" style="margin-bottom: 1em;">
+            <img src="https://i.ytimg.com/vi/o91gT73mQhg/maxresdefault.jpg" alt="a bowl of chicken soup" class="card-img-top ">
+            <div class="card-body">
+              <h5 class="card-title">Chicken Soup</h5>
+              <p class="card-text">8 servings/350 calories per serving</p>
+              <p class="card-text">10 min prep time/25 min cook time</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">2 celery stalks</li>
+              <li class="list-group-item">6 cloves garlic</li>
+              <li class="list-group-item">6 cups chicken broth</li>
+            </ul>
+            <div class="card-body">
+              <h6 class="card-subtitle">Instructions</h6>
+              <p class="card-text">1. Place a large pot over medium high heat and add oil. Once oil is hot, add garlic, onion, carrots, and celery. Cook for
+                                      a few minutes until onion becomes translucent.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="col-4">
+        <!-- recipe form column -->
+        <div class="col-4" style="border-left: 1em;">
           <h2>Share a Recipe</h2>
-          <form onsubmit=" return (submitForm())" id="recipe_form">
+          <form onsubmit=" submitForm(); return false;" id="recipe_form" method="POST">
             <h3><small class="muted">General Recipe Information</small></h3>
             <div class="form-group">
               <label for="recipe_name">Recipe name</label>
@@ -87,21 +125,24 @@
             </div>
 
             <h3><small class="muted">Ingredients</small></h3>
-            <div class="form-group">
-              <label for="ingredient1">Ingredient 1</label>
-              <input type="text" class="form-control" id="ingredient1" name="ingredient1" placeholder="2 cups sugar" required="true">
-            </div>
 
-            <div class="form-group">
-              <label for="ingredient2">Ingredient 2</label>
-              <input type="text" class="form-control" id="ingredient2" name="ingredient2" placeholder="1 tsp vanilla extract">
-            </div>
+            <div id="ingredients">
+              <div class="form-group">
+                <label for="ingredient1">Ingredient 1</label>
+                <input type="text" class="form-control" id="ingredient1" name="ingredient1" placeholder="2 cups sugar" required="true">
+              </div>
 
-            <div class="form-group">
-              <label for="ingredient3">Ingredient 3</label>
-              <input type="text" class="form-control" id="ingredient3" name="ingredient3" placeholder="1/4 cup of grandma's love <3">
+              <div class="form-group">
+                <label for="ingredient2">Ingredient 2</label>
+                <input type="text" class="form-control" id="ingredient2" name="ingredient2" placeholder="1 tsp vanilla extract">
+              </div>
+
+              <div class="form-group">
+                <label for="ingredient3">Ingredient 3</label>
+                <input type="text" class="form-control" id="ingredient3" name="ingredient3" placeholder="1/4 cup of grandma's love <3">
+              </div>
             </div>
-            <button class="btn btn-secondary btn-sm" onclick="addIngredientField()">Add Ingredient</button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="addIngredientField(); return false;">Add Ingredient</button>
 
             <div class="form-group">
               <label for="instructions">Instructions</label>
