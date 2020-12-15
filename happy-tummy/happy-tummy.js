@@ -30,19 +30,7 @@ function inputToHtmlRecipe(formContents) {
 
     const ingredientHtml = getIngredientHtml(formContents);
     const stepHtml = getStepHtml(formContents);
-    // var ingredientHtml = "";
-    // var ingredientIndex = 1;
 
-    // while (true) { // creates html for each ingredient input
-    //     if (formContents['ingredient'+ingredientIndex]!=undefined) {
-    //         ingredientHtml += `<li class="list-group-item">${formContents['ingredient'+ingredientIndex]}</li>`;
-    //         ingredientIndex++;
-    //     }
-    //     else{
-    //         break;
-    //     }       
-        
-    // }
     return `<div class='card recipe' style="margin-bottom: 1em;">
     <img src='https://www.flaticon.com/svg/static/icons/svg/2988/2988858.svg' class='card-img-top '>
     <div class='card-body'>
@@ -83,7 +71,7 @@ function getStepHtml(formContents) {
   var stepHtml = "";
   var stepIndex = 1;
 
-  while (true) { // creates html for each ingredient input
+  while (true) { // creates html for each step input
       if (formContents['step'+stepIndex]!=undefined) {
           stepHtml += `<li>${formContents['step'+stepIndex]}</li>`;
           stepIndex++;
@@ -104,7 +92,7 @@ function addIngredientField() { // adds ingredient html ingredient input field w
   </div>`)
 }
 
-function addStepField() {
+function addStepField() { // adds step html step input field when user clicks add step button
   const stepNum = $("#steps > div").length + 1;
   $('#steps').append(`<div class="form-group">
   <label for="instructions">Step ${stepNum}</label>
