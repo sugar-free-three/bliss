@@ -1,0 +1,29 @@
+::placeholder{
+    font-family: 'Open Sans', sans-serif !important;
+    opacity: 1;
+  }
+
+.pretty-input{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.step{
+    font-family: 'Open Sans', sans-serif;
+    color: #131657;
+}
+
+.pretty-submit:hover{
+    /* color: black !important; */
+  background-color: #b2bbe0 !important;
+  transition: color background-color 0.8s;
+}
+
+.card-img-top{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+button{
+    font-family: 'Open Sans', sans-serif;
+}

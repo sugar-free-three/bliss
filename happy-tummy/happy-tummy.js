@@ -73,7 +73,7 @@ function getStepHtml(formContents) {
 
   while (true) { // creates html for each step input
       if (formContents['step'+stepIndex]!=undefined) {
-          stepHtml += `<li>${formContents['step'+stepIndex]}</li>`;
+          stepHtml += `<li class="step">${formContents['step'+stepIndex]}</li>`;
           stepIndex++;
       }
       else{
