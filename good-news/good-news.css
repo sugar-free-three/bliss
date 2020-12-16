@@ -44,6 +44,10 @@
   font-family: 'Open Sans', sans-serif !important;
 }
 
+.list-group{
+  list-style-type: none !important;
+}
+
 /* hide the preview description for smaller screens */
 @media (max-width: 48em) {
   .hide {
