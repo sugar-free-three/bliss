@@ -16,21 +16,40 @@ function submitForm() {
     $('#ingredients').html(`<div class="form-group">
         <label for="ingredient1">Ingredient 1</label>
         <input type="text" class="form-control" id="ingredient1" name="ingredient1" placeholder="2 cups sugar" required="true">
-    </div>
+    </div>`);
 
-    <div class="form-group">
-        <label for="ingredient2">Ingredient 2</label>
-        <input type="text" class="form-control" id="ingredient2" name="ingredient2" placeholder="1 tsp vanilla extract">
-    </div>
-
-    <div class="form-group">
-        <label for="ingredient3">Ingredient 3</label>
-        <input type="text" class="form-control" id="ingredient3" name="ingredient3" placeholder="1/4 cup of grandma's love <3">
-    </div>`)
+    // reset number of steps to 1
+    $('#steps').html(`<div class="form-group">
+    <label for="instructions">Step 1</label>
+    <textarea required="true" class="form-control" id="step1" name="step1" rows="4" placeholder="Preheat your oven to 350."></textarea>
+  </div>`);
 }
 
 
 function inputToHtmlRecipe(formContents) {
+
+    const ingredientHtml = getIngredientHtml(formContents);
+    const stepHtml = getStepHtml(formContents);
+
+    return `<div class='card recipe' style="margin-bottom: 1em;">
+    <img src='https://www.flaticon.com/svg/static/icons/svg/2988/2988858.svg' class='card-img-top '>
+    <div class='card-body'>
+      <h5 class='card-title'>${formContents.recipe_name}</h5>
+      <p class='card-text'>${formContents.servings} servings/${formContents.calories} calories per serving</p>
+      <p class="card-text">${formContents.prep_time} min prep time/${formContents.cook_time} min cook time</p>
+    </div>
+    <ul class='list-group list-group-flush'>
+      ${ingredientHtml}
+    </ul>
+    <div class='card-body'>
+      <h6 class='card-subtitle'>Instructions</h6>
+      <ol>
+          ${stepHtml}
+      </ol>
+  </div>`;
+}
+
+function getIngredientHtml(formContents) {
     var ingredientHtml = "";
     var ingredientIndex = 1;
 
@@ -44,21 +63,25 @@ function inputToHtmlRecipe(formContents) {
         }       
         
     }
-    return `<div class='card recipe' style="margin-bottom: 1em;">
-    <img src='https://www.flaticon.com/svg/static/icons/svg/2988/2988858.svg' class='card-img-top '>
-    <div class='card-body'>
-      <h5 class='card-title'>${formContents.recipe_name}</h5>
-      <p class='card-text'>${formContents.servings} servings/${formContents.calories} calories per serving</p>
-      <p class="card-text">${formContents.prep_time} min prep time/${formContents.cook_time} min cook time</p>
-    </div>
-    <ul class='list-group list-group-flush'>
-      ${ingredientHtml}
-    </ul>
-    <div class='card-body'>
-      <h6 class='card-subtitle'>Instructions</h6>
-      <p class='card-text'>${formContents.instructions}</p>
-    </div>
-  </div>`;
+
+  return ingredientHtml;
+}
+
+function getStepHtml(formContents) {
+  var stepHtml = "";
+  var stepIndex = 1;
+
+  while (true) { // creates html for each step input
+      if (formContents['step'+stepIndex]!=undefined) {
+          stepHtml += `<li>${formContents['step'+stepIndex]}</li>`;
+          stepIndex++;
+      }
+      else{
+          break;
+      }       
+      
+  }
+  return stepHtml;
 }
 
 function addIngredientField() { // adds ingredient html ingredient input field when user clicks add ingredient button
@@ -67,4 +90,12 @@ function addIngredientField() { // adds ingredient html ingredient input field w
     <label for="ingredient${ingredientNum}">Ingredient ${ingredientNum}</label>
     <input type="text" class="form-control" id="ingredient${ingredientNum}" name="ingredient${ingredientNum}" placeholder="An extra ingredient">
   </div>`)
+}
+
+function addStepField() { // adds step html step input field when user clicks add step button
+  const stepNum = $("#steps > div").length + 1;
+  $('#steps').append(`<div class="form-group">
+  <label for="instructions">Step ${stepNum}</label>
+  <textarea required="true" class="form-control" id="step${stepNum}" name="step${stepNum}" rows="4" placeholder="Another step."></textarea>
+</div>`)
 }
