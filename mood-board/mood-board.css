@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Zilla+Slab+Highlight&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
 
-
-.title {
+h1 {
   text-align: center;
-  width: auto;
-  height: 60px;
 }
 
 textarea {
