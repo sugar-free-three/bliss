@@ -4,12 +4,30 @@
 
 .pretty-img {
     display: block;
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
     float: right;
+  }
+
+  .pretty-img:hover{
+    opacity: 0.5;
+    transition: opacity 0.5s;
   }
 
   .pretty-reply{
       margin-top: 0.6em;
       margin-right: 1em;
   }
+  
+
+  .pretty-hover:hover{
+      color: #A29BFE;
+      transition: color 0.25s;
+  }
+
+  /* hide the preview description for smaller screens */
+  @media (max-width: 48em) {
+    .hide {
+    display: none;
+    }
+    }

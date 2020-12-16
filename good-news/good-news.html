@@ -9,6 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- local script -->
+    <script type="text/javascript" src="good-news.js"></script>
     <title>Good News</title>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
@@ -38,7 +40,7 @@
       </nav>
     <div class="container justify-content-center">
     <h1>Good News</h1>
-    <p>Welcome to Good News, where you can relax and uplift your spirits by catching up on happy and inspirational articles!</p>
+    <p>Welcome to Good News, where you can relax and uplift your spirits by catching up on happy and inspirational posts and articles!</p>
 
     <!-- news ?  -->
     <div class="container">
@@ -48,22 +50,26 @@
         <div class="card-body">
           <div class="row">
             <div class="col">
-              <h5 class="card-title">News article title</h5>
+              <a class="pretty-hover" href="https://twitter.com/KjeldDuits/status/1086854660000931840" target="_blank">
+                <h5 class="card-title pretty-hover">Japanese Museum Takes Care of Lost Donald Duck Plush for 30 Years</h5>
+              </a>
               <!-- need to cut this for media query  -->
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                officia deserunt mollit anim id est laborum.
+              <p class="card-text hide">
+                The Chido Museum is a wonderful museum for local culture in Tsuruoka, Yamagata, 30 years ago, a visitor forgot her Donald Duck doll here. 
+                The museum cared for it in case it would be claimed.
+                They even made outfits and bathed it.
+                After the museum tweeted about the doll in December, it received a package "for Donald Duck" with a note:
+                “To Donald, who has been all alone for 30 years,
+                I hope you and Daisy will be happy together from now on”
+                Enclosed was a Daisy Duck doll.
               </p>
-              <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
+              <p class="card-text"><small class="text-muted">Jan 19, 2019</small></p>
             </div>
   
             <div class="col">
-              <img class="card-img-top pretty-img" src="https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img" >
+              <a href="https://twitter.com/KjeldDuits/status/1086854660000931840" target="_blank">
+                <img class="card-img-top pretty-img" src="./images/donald-duck.jpg" alt="clean donald duck toy" >
+              </a>
             </div>
           </div>
   
@@ -141,21 +147,24 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <h5 class="card-title">News article title</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                officia deserunt mollit anim id est laborum.
+            <a class="pretty-hover" href="https://news.uci.edu/2020/11/04/meals-on-wheels/" target="_blank">
+              <h5 class="card-title pretty-hover">Ingenious mobile robots deliver restaurant fare to UCI students on campus</h5>
+            </a>
+            <p class="card-text hide">
+              “Day One was very successful,” says Lin Phu Tang, director of Dining Services. 
+              Affectionately called Zot Bots at UCI, the ottoman-sized, six-wheeled automatons are 
+              licensed from Starship Technologies, which provides them to several colleges throughout 
+              the country. They’re wholly independent and driven by machine learning, in which massive 
+              amounts of data are collected and run through multiple processes to determine the best 
+              possible outcome and the most optimal solution.
             </p>
-            <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
+            <p class="card-text"><small class="text-muted">Nov 4, 2020</small></p>
           </div>
 
           <div class="col">
-            <img class="card-img-top pretty-img" src="https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img" >
+            <a href="https://news.uci.edu/2020/11/04/meals-on-wheels/" target="_blank">
+              <img class="card-img-top pretty-img" src="./images/zotbot.jpg" alt="anteater plush on zotbot" >
+            </a>
           </div>
         </div>
 
@@ -196,21 +205,24 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <h5 class="card-title">News article title</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                officia deserunt mollit anim id est laborum.
+            <a class="pretty-hover" target="_blank" href="https://www.eyeem.com/blog/instant-relaxation-11-meditation-pictures-to-calm-the-mind">
+              <h5 class="card-title pretty-hover">Instant Relaxation: 11 Meditation Pictures to Calm the Mind</h5>
+            </a>
+            <p class="card-text hide">
+              Life ain’t easy. We all need to relax from time to time! 
+              If you’re wondering how to fit a few moments of calm into your everyday, fear not. 
+              Background scenes of serenity, of silent moments, beautiful shots of nature and 
+              the ocean are in high demand. This spirit-calming, soul-soothing series of 
+              wellness pictures of meditation and yoga is guaranteed to give you 
+              the inner strength and confidence to speed through the afternoon.
             </p>
-            <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
+            <p class="card-text"><small class="text-muted">2020</small></p>
           </div>
 
           <div class="col">
-            <img class="card-img-top pretty-img" src="https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img" >
+            <a target="_blank" href="https://www.eyeem.com/blog/instant-relaxation-11-meditation-pictures-to-calm-the-mind">
+              <img class="card-img-top pretty-img" src="./images/boat.jpg" alt="boat in lake" >
+            </a>
           </div>
         </div>
 
@@ -222,13 +234,17 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <h5 class="card-title">News article title</h5>
-            <p class="card-text">Lorem ipsum ...</p>
-            <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
+            <a class="pretty-hover" href="https://twitter.com/marksbald/status/1323830287403376641" target="_blank">
+              <h5 class="card-title pretty-hover">Watch Mr. Cooper eat a pumpkin.</h5>
+            </a>
+            <p class="card-text">Need a break from the news? Watch Mr. Cooper eat a pumpkin. Smooooooth.</p>
+            <p class="card-text"><small class="text-muted">Nov 3, 2020</small></p>
           </div>
 
           <div class="col">
-            <img class="card-img-top pretty-img" src="https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img" >
+            <a href="https://twitter.com/marksbald/status/1323830287403376641" target="_blank">
+              <img class="card-img-top pretty-img" src="./images/mr_cooper.jpg" alt="tortoise" >
+            </a>
           </div>
         </div>
 
@@ -297,21 +313,23 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <h5 class="card-title">News article title</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                officia deserunt mollit anim id est laborum.
+            <a class="pretty-hover" target="_blank" href="https://www.nbcnews.com/health/health-news/moderna-vaccine-appears-protect-against-coronavirus-infection-n1251237">
+              <h5 class="card-title pretty-hover">Moderna's vaccine is highly effective, FDA says, clearing way for second vaccine</h5>
+            </a>
+            <p class="card-text hide">
+              FDA documents show the vaccine is not only extremely effective, 
+              but it may also reduce the spread of the virus.
+              Moderna's Covid-19 vaccine is 94 percent effective at preventing 
+              symptomatic illness and appears to prevent the spread of the virus as well, 
+              according to documents released Tuesday.
             </p>
-            <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
+            <p class="card-text"><small class="text-muted">Dec 15, 2020</small></p>
           </div>
 
           <div class="col">
-            <img class="card-img-top pretty-img" src="https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img" >
+            <a class="pretty-hover" target="_blank" href="https://www.nbcnews.com/health/health-news/moderna-vaccine-appears-protect-against-coronavirus-infection-n1251237">
+              <img class="card-img-top pretty-img" src="https://media4.s-nbcnews.com/j/newscms/2020_47/3354351/200518-moderna-vaccine-lab-cs-1159a_05afa9493b6af3ebe1c70cd08f36a9b9.fit-2000w.jpg" alt="vaccine" >
+            </a>
           </div>
         </div>
 
@@ -323,21 +341,23 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <h5 class="card-title">News article title</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                officia deserunt mollit anim id est laborum.
+            <a class="pretty-hover" href="https://www.seattletimes.com/seattle-news/environment/orca-tahlequah-is-a-mother-again/" target="_blank">
+              <h5 class="card-title pretty-hover">Orca Tahlequah is a mother again</h5>
+            </a>
+            <p class="card-text hide">
+              Mother orca Tahlequah has had her baby.
+              The endangered southern resident killer whale, J35, touched hearts 
+              in the Pacific Northwest and around the world in August 2018 when 
+              she lost a calf that lived only a half-hour. She carried the calf 
+              for 17 days and 1,000 miles, refusing to let the calf go.
             </p>
-            <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
+            <p class="card-text"><small class="text-muted">Sep 5, 2020</small></p>
           </div>
 
           <div class="col">
-            <img class="card-img-top pretty-img" src="https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img" >
+            <a href="https://www.seattletimes.com/seattle-news/environment/orca-tahlequah-is-a-mother-again/" target="_blank">
+              <img class="card-img-top pretty-img" src="https://static.seattletimes.com/wp-content/uploads/2020/09/153021-1020x686.jpg" alt="orca" >
+            </a>
           </div>
         </div>
 
@@ -387,21 +407,22 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <h5 class="card-title">News article title</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                officia deserunt mollit anim id est laborum.
+            <a class="pretty-hover" href="https://www.healthline.com/health/deskercise" target="_blank">
+              <h5 class="card-title pretty-hover">Stretches to Do at Work Every Day</h5>
+            </a>
+            <p class="card-text hide">
+              The good news is that moving or stretching is a buildable habit. 
+              For starters, you can set a timer to remind you to take a quick walk or stretch. 
+              If you’re pressed for time, there are even certain stretches you can do at your desk. 
+              Scroll down for the tutorial on working out those computer kinks.
             </p>
-            <p class="card-text"><small class="text-muted">Date MM/DD/YY</small></p>
+            <p class="card-text"><small class="text-muted">Mar 1, 2017</small></p>
           </div>
 
           <div class="col">
-            <img class="card-img-top pretty-img" src="https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img" >
+            <a href="https://www.healthline.com/health/deskercise" target="_blank">
+              <img class="card-img-top pretty-img" src="./images/stretch.jpg" alt="person stretching" >
+            </a>
           </div>
         </div>
 
