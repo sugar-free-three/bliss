@@ -7,11 +7,13 @@
     max-width: 90%;
     height: auto;
     float: right;
+    opacity: 1.0;
+    transition: opacity 0.3s;
   }
 
 .pretty-img:hover{
   opacity: 0.5;
-  transition: opacity 0.13s;
+  transition: opacity 0.15s;
 }
 
 .pretty-reply{
@@ -19,10 +21,13 @@
     margin-right: 1em;
 }
   
+.pretty-hover{
+  transition: color 0.25s;
+}
 
 .pretty-hover:hover{
     color: #A29BFE;
-    transition: color 0.05s;
+    transition: color 0.15s;
 }
 
 .pretty-btn{
