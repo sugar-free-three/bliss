@@ -9,25 +9,40 @@
     float: right;
   }
 
-  .pretty-img:hover{
-    opacity: 0.5;
-    transition: opacity 0.5s;
-  }
+.pretty-img:hover{
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
 
-  .pretty-reply{
-      margin-top: 0.6em;
-      margin-right: 1em;
-  }
+.pretty-reply{
+    margin-top: 0.6em;
+    margin-right: 1em;
+}
   
 
-  .pretty-hover:hover{
-      color: #A29BFE;
-      transition: color 0.25s;
-  }
+.pretty-hover:hover{
+    color: #A29BFE;
+    transition: color 0.25s;
+}
 
-  /* hide the preview description for smaller screens */
-  @media (max-width: 48em) {
-    .hide {
-    display: none;
-    }
-    }
+.pretty-btn{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pretty-btn:hover{
+  color: black !important;
+  background-color: #ffd6e5 !important;
+  transition: color background-color 0.25s;
+}
+
+.pretty-placeholder{
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* hide the preview description for smaller screens */
+@media (max-width: 48em) {
+  .hide {
+  display: none;
+  }
+}
+

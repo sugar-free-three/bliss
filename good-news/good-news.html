@@ -39,10 +39,10 @@
         </div>
       </nav>
     <div class="container justify-content-center">
-    <h1>Good News</h1>
-    <p>Welcome to Good News, where you can relax and uplift your spirits by catching up on happy and inspirational posts and articles!</p>
+    <h1 style="text-align: center;">Good News</h1>
+    <p style="text-align: center;">Welcome to Good News, where you can relax and uplift your spirits by catching up on happy and inspirational posts and articles!</p>
 
-    <!-- news ?  -->
+    <!-- news section  -->
     <div class="container">
 
       <!-- first article  -->
@@ -89,7 +89,7 @@
                         <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763721.svg" alt="icon" height="50" width="50">
                         <div class="media-body col-sm-auto">
                           <h6 class="mt-0">Joyce</h6>
-                          <p>first!!</p>
+                          <p>omg that made my day 🥺</p>
                             <!-- replies used to go here, but no more  -->
                         </div>
                       </div>
@@ -105,7 +105,7 @@
                         </div>
                         <div class="media-body">
                           <h6 class="mt-0">Shannon</h6>
-                          <p>reply to first comment</p>
+                          <p>we all gotta go and visit this museum now pls 🥺 💖 </p>
                         </div>
                       </div>
                     </li>
@@ -116,7 +116,7 @@
                         <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
                         <div class="media-body col-sm-auto">
                           <h6 class="mt-0">Mohra</h6>
-                          <p>second :)</p>
+                          <p>ommmggg 🥺 ! that's the kinda of good news we love</p>
                         </div>
                       </div>
 
@@ -128,10 +128,32 @@
                         </div>
                         <div class="media-body">
                           <h6 class="mt-0">Shannon</h6>
-                          <p>reply to second comment</p>
+                          <p>🥰 🥰 🥰 !!!</p>
                         </div>
                       </div>
                     </li>
+
+                    <!-- user comment appear here  -->
+                    <li class="list-group-item user-comment">
+
+                    </li>
+
+                    <!-- add a comment  -->
+                  <li class="list-group-item">
+                    <h5>Add comment</h5>
+                    <div class="media">
+                      <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
+                      <div class="media-body col-sm-auto">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(0)">Comment</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
                   </ul>
                 
               </div>
@@ -186,11 +208,32 @@
                         <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
                         <div class="media-body col-sm-auto">
                           <h6 class="mt-0">Mohra</h6>
-                          <p>first !!!</p>
+                          <p>too cute !! 💕 </p>
                         </div>
 
                       </div>
                     </li>
+
+                    <!-- user comment appear here  -->
+                    <li class="list-group-item user-comment">
+
+                    </li>
+
+                     <!-- add a comment  -->
+                  <li class="list-group-item">
+                    <h5>Add comment</h5>
+                    <div class="media">
+                      <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
+                      <div class="media-body col-sm-auto">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(1)">Comment</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
                   </ul>
                 
               </div>
@@ -226,6 +269,57 @@
           </div>
         </div>
 
+        <!-- comments section  -->
+        <div class="container">
+          <div class="row">
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h5>Comments</h5>
+                </div> 
+
+                <!-- reader comments  -->
+                 <div class="comments-list">
+                  <ul class="list-group list-group-flush">
+
+                      <!-- one comment -->
+                      <li class="list-group-item">
+                      <div class="media">
+                        <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
+                        <div class="media-body col-sm-auto">
+                          <h6 class="mt-0">Shannon</h6>
+                          <p>ahh ,, trying to feel at peace 😌 ⛅ </p>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <!-- user comment appear here  -->
+                    <li class="list-group-item user-comment">
+
+                    </li>
+
+                     <!-- add a comment  -->
+                  <li class="list-group-item">
+                    <h5>Add comment</h5>
+                    <div class="media">
+                      <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
+                      <div class="media-body col-sm-auto">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(2)">Comment</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  </ul>
+                
+              </div>
+          </div>
+      </div>
+      </div>
+
       </div>
     </div>
 
@@ -237,7 +331,7 @@
             <a class="pretty-hover" href="https://twitter.com/marksbald/status/1323830287403376641" target="_blank">
               <h5 class="card-title pretty-hover">Watch Mr. Cooper eat a pumpkin.</h5>
             </a>
-            <p class="card-text">Need a break from the news? Watch Mr. Cooper eat a pumpkin. Smooooooth.</p>
+            <p class="card-text hide">Need a break from the news? Watch Mr. Cooper eat a pumpkin. Smooooooth.</p>
             <p class="card-text"><small class="text-muted">Nov 3, 2020</small></p>
           </div>
 
@@ -265,7 +359,7 @@
                       <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
                       <div class="media-body col-sm-auto">
                         <h6 class="mt-0">Mohra</h6>
-                        <p>first!!</p>
+                        <p>omg mr. cooper 😂</p>
                           <!-- replies used to go here  -->
                       </div>
                     </div>
@@ -280,7 +374,7 @@
                       </div>
                       <div class="media-body">
                         <h6 class="mt-0">Shannon</h6>
-                        <p>first reply to comment</p>
+                        <p>precious,, he said 🎃 🐢 munch ! </p>
                       </div>
                     </div>
 
@@ -292,11 +386,32 @@
                       </div>
                       <div class="media-body">
                         <h6 class="mt-0">Joyce</h6>
-                        <p>second reply to same comment</p>
+                        <p>i care him 🥺 😭 </p>
                       </div>
                     </div>
 
 
+                  </li>
+
+                  <!-- user comment appear here  -->
+                  <li class="list-group-item user-comment">
+
+                  </li>
+
+                   <!-- add a comment  -->
+                  <li class="list-group-item">
+                    <h5>Add comment</h5>
+                    <div class="media">
+                      <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
+                      <div class="media-body col-sm-auto">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(3)">Comment</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               
@@ -332,6 +447,57 @@
             </a>
           </div>
         </div>
+
+        <!-- comments section  -->
+        <div class="container">
+          <div class="row">
+              <div class="col-md-10">
+                <div class="page-header">
+                  <h5>Comments</h5>
+                </div> 
+
+                <!-- reader comments  -->
+                 <div class="comments-list">
+                  <ul class="list-group list-group-flush">
+
+                      <!-- one comment -->
+                      <li class="list-group-item">
+                      <div class="media">
+                        <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
+                        <div class="media-body col-sm-auto">
+                          <h6 class="mt-0">Shannon</h6>
+                          <p>oh .. interesting 😳 🤯 </p>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <!-- user comment appear here  -->
+                    <li class="list-group-item user-comment">
+
+                    </li>
+
+                     <!-- add a comment  -->
+                  <li class="list-group-item">
+                    <h5>Add comment</h5>
+                    <div class="media">
+                      <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
+                      <div class="media-body col-sm-auto">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(4)">Comment</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  </ul>
+                
+              </div>
+          </div>
+      </div>
+      </div>
 
       </div>
     </div>
@@ -378,7 +544,7 @@
                 <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763721.svg" alt="icon" height="50" width="50">
                 <div class="media-body col-sm-auto">
                   <h6 class="mt-0">Joyce</h6>
-                  <p>first</p>
+                  <p>ahh congrats !! 💕</p>
                 </div>
               </div>
             </li>
@@ -389,7 +555,28 @@
                 <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
                 <div class="media-body col-sm-auto">
                   <h6 class="mt-0">Shannon</h6>
-                  <p>first</p>
+                  <p>sea animals are so cool 🌊 - incredible T_T !! 💞 </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- user comment appear here  -->
+            <li class="list-group-item user-comment">
+
+            </li>
+
+             <!-- add a comment  -->
+             <li class="list-group-item">
+              <h5>Add comment</h5>
+              <div class="media">
+                <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
+                <div class="media-body col-sm-auto">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(5)">Comment</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </li>
@@ -444,11 +631,32 @@
                         <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763724.svg" alt="icon" height="50" width="50">
                         <div class="media-body col-sm-auto">
                           <h6 class="mt-0">Mohra</h6>
-                          <p>first</p>
+                          <p>stretching is so important! 😣 </p>
                         </div>
 
                       </div>
                     </li>
+
+                    <!-- user comment appear here  -->
+                    <li class="list-group-item user-comment">
+
+                    </li>
+
+                     <!-- add a comment  -->
+                  <li class="list-group-item">
+                    <h5>Add comment</h5>
+                    <div class="media">
+                      <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
+                      <div class="media-body col-sm-auto">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(6)">Comment</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
                   </ul>
                 
               </div>
