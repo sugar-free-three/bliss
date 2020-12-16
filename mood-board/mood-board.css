@@ -23,6 +23,7 @@ textarea {
   width: 70%;
   position: relative;
   margin: auto;
+  margin-bottom: 3%;
   background-color: #e9d6b9;
   border-radius: 20px;
   box-shadow: 5px 5px 5px 0px #e8e0d3;
@@ -48,9 +49,18 @@ textarea {
   background-color: #f0cdcd;
   padding: 0px;
   margin: 20px;
-  border-top: 25px solid #e2b0ac;
+  border-top: 25px solid rgb(255, 252, 246);
   padding: 20px;
   box-shadow: 0px 5px 5px 0px #82602f;
+  transition: transform 0.3s ease-in-out;
+}
+
+.stickynote:hover {
+  transform: scale(1.1); 
+}
+
+.col-sm {
+  margin-top: 12%;
 }
 
 .add {
@@ -61,14 +71,52 @@ textarea {
   color: white;
   height: 60px;
   width: 60px;
-  border-radius: 100px;
+  border-radius: 100%;
   border: none;
-  position: absolute;
+  position: relative;
+  transition: 0.3s ease-in-out;
 }
 
-.add:hover {
+.addBlue {
+  background-color: #c9dee6;
+  font-size: 32px;
+  bottom: 47%;
+  left: 25%;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  border: none;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.addYellow {
+  background-color: #f3d9c4;
+  font-size: 32px;
+  bottom: 47%;
+  left: 25%;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  border: none;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.add:hover, .addBlue:hover, .addYellow:hover {
   animation: 1s emphasize infinite alternate;
   cursor: pointer;
+}
+
+.menu {
+  width: 40%;
+  background-color: rgb(248, 234, 234);
+  height: auto;
+  margin: auto;
+  border-radius: 2%;
+  padding: 1%;
 }
 
 @keyframes emphasize {
