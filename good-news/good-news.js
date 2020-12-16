@@ -5,9 +5,12 @@ function addComment(cNum){
     userText+= text;
     userText+='</p></div></li><hr/>';
 
+    // add in the comment section
     var comment = $.parseHTML(userText);
     var section = document.getElementsByClassName("user-comment")[cNum];
     $(comment).appendTo(section);
 
-    // possible todo: clear the input box to be clean
+    // clear input text box
+    var test = document.getElementsByClassName("user-request-text")[cNum].value="";
+
 }
