@@ -14,7 +14,6 @@ textarea {
 
 .board {
   display: flex;
-  flex-flow: row-wrap;
   flex-wrap: wrap;
   height: auto;
   width: 70%;
