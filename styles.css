@@ -24,7 +24,6 @@ p{
     color: #131657;
 }
 
-
 .container {
     display:flex;
     flex-direction:column;
@@ -39,16 +38,30 @@ p{
 }
 
 
-a {
+a:link {
     padding-bottom: .5em;
     border-bottom: 2px solid transparent;
     transition: all .2s ease-in-out;
   }
 
-a:hover {
+a:not(.preview-icon):hover, .mainHover:hover {
     padding-bottom: .1em;
     border-bottom: 3px solid rgb(187, 158, 159);
   }
+
+.preview-icon {
+    padding-bottom: 0em;
+    border-bottom: 0px solid transparent;
+}
+
+.preview-icon:hover {
+    padding-bottom: 0em;
+}
+
+.user-icon{
+    padding-right: 0.5em;
+    color: #76656c;
+}
 
 footer {
    position: relative;
@@ -59,4 +72,32 @@ footer {
    text-align: center;
    padding-bottom: 1.5em;
    padding-top: 1.5em;
+}
+
+
+@keyframes emphasize {
+    0% {
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  } 
+
+.mainIcon {
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+.mainIcon:hover {
+  animation: 2s emphasize infinite alternate;
+  cursor: pointer;
 }
