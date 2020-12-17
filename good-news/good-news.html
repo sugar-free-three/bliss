@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- local script -->
-    <script type="text/javascript" src="good-news.js"></script>
+    <script src="good-news.js"></script>
     <title>Good News</title>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <img src="https://www.flaticon.com/svg/static/icons/svg/3158/3158969.svg" height="50" width="50">
+        <img src="https://www.flaticon.com/svg/static/icons/svg/3158/3158969.svg" height="50" width="50" alt="home icon">
         <a class="navbar-brand" href="../" style="margin-left:15px;">Bliss</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -100,7 +100,7 @@
                       <!-- one reply to comment  -->
                       <div class="media mt-3 col-sm-auto">
                         <h5 class="pretty-reply">↳</h5>
-                        <div class="pr-3" href="#">
+                        <div class="pr-3" >
                           <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
                         </div>
                         <div class="media-body">
@@ -123,7 +123,7 @@
                       <!-- another reply  -->
                       <div class="media mt-3 col-sm-auto">
                         <h5 class="pretty-reply">↳</h5>
-                        <div class="pr-3" href="#">
+                        <div class="pr-3">
                           <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
                         </div>
                         <div class="media-body">
@@ -145,7 +145,7 @@
                       <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
                       <div class="media-body col-sm-auto">
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" aria-describedby="basic-addon2">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box">
                           <div class="input-group-append">
                             <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(0)">Comment</button>
                           </div>
@@ -161,6 +161,7 @@
       </div>
       </div>
   
+      </div>
       </div>
       </div>
 
@@ -226,7 +227,7 @@
                       <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
                       <div class="media-body col-sm-auto">
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" aria-describedby="basic-addon2">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box">
                           <div class="input-group-append">
                             <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(1)">Comment</button>
                           </div>
@@ -289,7 +290,7 @@
                     <!-- one reply to comment  -->
                     <div class="media mt-3 col-sm-auto">
                       <h5 class="pretty-reply">↳</h5>
-                      <div class="pr-3" href="#">
+                      <div class="pr-3">
                         <img src="https://www.flaticon.com/svg/static/icons/svg/763/763707.svg" alt="icon" height="50" width="50">
                       </div>
                       <div class="media-body">
@@ -301,7 +302,7 @@
                     <!-- another reply to same comment  -->
                     <div class="media mt-3 col-sm-auto">
                       <h5 class="pretty-reply">↳</h5>
-                      <div class="pr-3" href="#">
+                      <div class="pr-3">
                         <img src="https://www.flaticon.com/svg/static/icons/svg/763/763721.svg" alt="icon" height="50" width="50">
                       </div>
                       <div class="media-body">
@@ -325,7 +326,7 @@
                       <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
                       <div class="media-body col-sm-auto">
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" aria-describedby="basic-addon2">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" >
                           <div class="input-group-append">
                             <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(2)">Comment</button>
                           </div>
@@ -405,7 +406,7 @@
                       <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
                       <div class="media-body col-sm-auto">
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" aria-describedby="basic-addon2">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" >
                           <div class="input-group-append">
                             <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(3)">Comment</button>
                           </div>
@@ -485,7 +486,7 @@
                       <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
                       <div class="media-body col-sm-auto">
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" aria-describedby="basic-addon2">
+                          <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" >
                           <div class="input-group-append">
                             <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(4)">Comment</button>
                           </div>
@@ -573,7 +574,7 @@
                 <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
                 <div class="media-body col-sm-auto">
                   <div class="input-group mb-3">
-                    <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" >
                     <div class="input-group-append">
                       <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(5)">Comment</button>
                     </div>
@@ -650,7 +651,7 @@
                       <img class="mr-1" src="https://www.flaticon.com/svg/static/icons/svg/763/763713.svg" alt="icon" height="50" width="50">
                       <div class="media-body col-sm-auto">
                         <div class="input-group mb-3">
-                          <input type="text" id="pls" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" aria-describedby="basic-addon2">
+                          <input type="text" id="pls" class="form-control pretty-placeholder user-request-text" placeholder="Enter here..." aria-label="Comment box" >
                           <div class="input-group-append">
                             <button class="btn btn-outline-secondary pretty-btn" type="button" onclick="addComment(6)">Comment</button>
                           </div>

@@ -37,7 +37,7 @@
 .pretty-btn:hover{
   color: black !important;
   background-color: #ffd6e5 !important;
-  transition: color background-color 0.8s;
+  transition: color 0.8s;
 }
 
 .pretty-placeholder{
