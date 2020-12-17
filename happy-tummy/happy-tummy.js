@@ -15,13 +15,13 @@ function submitForm() {
     // reset number of ingredients to 3
     $('#ingredients').html(`<div class="form-group">
         <label for="ingredient1">Ingredient 1</label>
-        <input type="text" class="form-control" id="ingredient1" name="ingredient1" placeholder="2 cups sugar" required="true">
+        <input type="text" class="form-control" id="ingredient1" name="ingredient1" placeholder="2 cups sugar" required>
     </div>`);
 
     // reset number of steps to 1
     $('#steps').html(`<div class="form-group">
     <label for="instructions">Step 1</label>
-    <textarea required="true" class="form-control" id="step1" name="step1" rows="4" placeholder="Preheat your oven to 350."></textarea>
+    <textarea required class="form-control" id="step1" name="step1" rows="4" placeholder="Preheat your oven to 350."></textarea>
   </div>`);
 }
 
@@ -88,14 +88,14 @@ function addIngredientField() { // adds ingredient html ingredient input field w
     const ingredientNum = $("#ingredients > div").length + 1;
     $('#ingredients').append(`<div class="form-group">
     <label for="ingredient${ingredientNum}">Ingredient ${ingredientNum}</label>
-    <input type="text" class="form-control" id="ingredient${ingredientNum}" name="ingredient${ingredientNum}" placeholder="An extra ingredient">
+    <input type="text" class="form-control" id="ingredient${ingredientNum}" name="ingredient${ingredientNum}" placeholder="An extra ingredient" required>
   </div>`)
 }
 
 function addStepField() { // adds step html step input field when user clicks add step button
   const stepNum = $("#steps > div").length + 1;
   $('#steps').append(`<div class="form-group">
-  <label for="instructions">Step ${stepNum}</label>
-  <textarea required="true" class="form-control" id="step${stepNum}" name="step${stepNum}" rows="4" placeholder="Another step."></textarea>
+  <label for="step${stepNum}">Step ${stepNum}</label>
+  <textarea required class="form-control" id="step${stepNum}" name="step${stepNum}" rows="4" placeholder="Another step."></textarea>
 </div>`)
 }
