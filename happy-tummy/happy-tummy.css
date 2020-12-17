@@ -15,7 +15,7 @@
 .pretty-submit:hover{
     /* color: black !important; */
   background-color: #b2bbe0 !important;
-  transition: color background-color 0.8s;
+  transition: background-color 0.8s;
 }
 
 .card-img-top{
